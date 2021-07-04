@@ -11,8 +11,9 @@ from time import sleep
 
 Username="Your Username"
 Password="Your Password"
+Api_Secret="Your Api Secret"
 at = ab.login_and_get_access_token(username=Username, password=Password, twoFA="0",
-                                   api_secret="Z8AGXOMYHE3OU1LQGGBE49B0MW4Y2QSZDFOU7YBSLCWML8XH9ASWQEF06K3BTX61")
+                                   api_secret=Api_Secret)
 a = ab(username=Username, password=Password, access_token=at)
 socket_opened = False
 buy=[0]
